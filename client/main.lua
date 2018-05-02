@@ -63,7 +63,7 @@ AddEventHandler("esx_jailer:jail", function(jailTime)
 			
 			-- jail time served
 			TriggerServerEvent('esx_jailer:unjailTime', -1)
-			SetEntityCoords(sourcePed, Config.JailBlip.x, Config.JailBlip.y, Config.JailBlip.z)
+			SetEntityCoords(sourcePed, Config.JailRelease.x, Config.JailRelease.y, Config.JailRelease.z)
 			
 			escape = false
 			
